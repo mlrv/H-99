@@ -1,5 +1,6 @@
 {- 
   Eliminate consecutive duplicates of list elements.
+  
   compress "aaaabccaadeeee" -> "abcade"
 -}
 

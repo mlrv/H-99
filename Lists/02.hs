@@ -1,5 +1,6 @@
 {- 
   Find the last but one element of a list.
+  
   lastButOne [1, 2, 3] -> 2
   lastButOne "abcdef" -> 'e'
 -}

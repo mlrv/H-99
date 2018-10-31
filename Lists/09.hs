@@ -1,5 +1,6 @@
 {- 
   Pack consecutive duplicates of list elements into sublists.
+  
   pack ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'e', 'e'] -> ["aaaa", "b", "cc", "eeee"]
 -}
 

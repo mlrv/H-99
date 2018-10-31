@@ -1,5 +1,6 @@
 {- 
   Find the last element of a list.
+  
   lastElement [1, 2, 3] -> 3
   lastElement "abcdef" -> 'f'
 -}

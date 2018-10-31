@@ -1,5 +1,6 @@
 {- 
   Find the Kth element of a list.
+  
   findKthElement [1, 3, 7, 9, 2] 2 -> 3
   findKthElement "haskell" 5 -> 'e'
 -}
