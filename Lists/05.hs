@@ -1,5 +1,5 @@
 {- 
-  Find the number of elements of a list.
+  Reverse a list.
   
   reverseList [1, 2, 3] -> [3, 2, 1]
   reverseList "hello" -> "olleh"
