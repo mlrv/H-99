@@ -10,6 +10,6 @@ slice :: [a] -> Int -> Int -> [a]
 
 slice [] _ _ = []
 slice xs j k
-  | j >= k = error "the first index must be smaller than the second one"
+  | j >= k    = error "the first index must be smaller than the second one"
   | otherwise = drop (j - 1) (take k xs)
 

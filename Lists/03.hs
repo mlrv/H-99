@@ -9,8 +9,8 @@ findKthElement :: [a] -> Int -> a
 
 findKthElement [] _ = error "Empty list"
 findKthElement xs k
-  | k <= 0 = error "k must be positive"
+  | k <= 0        = error "k must be positive"
   | k > length xs = last xs
-  | otherwise = xs !! (k - 1)
+  | otherwise     = xs !! (k - 1)
 
 
