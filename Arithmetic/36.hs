@@ -23,7 +23,7 @@ primeFactors x =  pF : (primeFactors $ x `div` pF) where
 isPrime :: Int -> Bool
 
 isPrime x
-  | x <= 0 = False
+  | x <= 0    = False
   | otherwise = not $ any hasDivisors [2..(x -1)]
   where hasDivisors = \n -> x `mod` n == 0
 

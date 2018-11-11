@@ -11,8 +11,8 @@ lsort :: (Ord a) => [[a]] -> [[a]]
 lsort [] = []
 lsort xs = sortBy subListLength xs where
   subListLength a b
-    | length a > length b = GT
-    | length a < length b = LT
+    | length a > length b  = GT
+    | length a < length b  = LT
     | length a == length b = EQ
 
 
