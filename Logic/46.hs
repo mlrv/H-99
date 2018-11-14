@@ -12,34 +12,29 @@
     False False False
 -}
 
-and' :: Bool -> Bool -> Bool
-and' False _ = False
-and' _ False = False
-and' x y = True
+not' :: Bool -> Bool
+not' True  = False
+not' False = True
 
-or' :: Bool -> Bool -> Bool
-or' True _ = True
-or' _ True = True
-or' x y = False
+and', or', nor', nand', xor', impl', equ' :: Bool -> Bool -> Bool
 
-nand' :: Bool -> Bool -> Bool
-nand' True True = False
-nand' x y = True
+and' True True = True
+and' _ _ = False
 
-nor' :: Bool -> Bool -> Bool
-nor' False False = True
-nor' x y = False
+or' False False = False
+or' _ _ = True
 
-xor' :: Bool -> Bool -> Bool
+nand' x y = not' $ and' x y
+
+nor' x y = not' $ or' x y
+
 xor' True False = True
 xor' False True = True
-xor' x y = False
+xor' _ _ = False
 
-impl' :: Bool -> Bool -> Bool
 impl' True False = False
 impl' x y = True
 
-equ' :: Bool -> Bool -> Bool
 equ' True True = True
 equ' False False = True
-equ' x y = False
+equ' _ _ = False
