@@ -16,3 +16,8 @@ mirror :: Tree a -> Tree b -> Bool
 mirror Empty Empty = True
 mirror (Branch _ a b) (Branch _ x y) = mirror a b && mirror x y
 mirror _ _ = False
+
+symmetric :: Tree a -> Bool
+
+symmetric Empty = True
+symmetric (Branch _ a b) = mirror a b
