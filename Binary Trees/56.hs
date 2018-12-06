@@ -11,3 +11,8 @@
 data Tree a = Empty | Branch a (Tree a) (Tree a)
               deriving (Show, Eq)
 
+mirror :: Tree a -> Tree b -> Bool
+
+mirror Empty Empty = True
+mirror (Branch _ a b) (Branch _ x y) = mirror a b && mirror x y
+mirror _ _ = False
